@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Car class </h1>
+    <script>
+       function Voiture(model, annee, marque){
+         this.model = model;
+         this.annee = annee;
+         this.marque = marque;
+         this.getInfo= function(){
+            return this.model + "  has done  " + this.marque + "  marque " 
+         }
+       }
+        let Nvoiture = new Voiture('Land Cruser', 2024, 1997)
+        let Nvoiture1 = new Voiture('Renault', 2025, 1900)
+        console.log(Nvoiture.getInfo());
+        console.log(Nvoiture1.getInfo());
+        
+    </script>
+</body>
+</html>
